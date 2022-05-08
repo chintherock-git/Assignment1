@@ -1,7 +1,7 @@
 {
   "server": "hub-cloud.browserstack.com",
-  "user": "BROWSERSTACK_USERNAME",
-  "key": "BROWSERSTACK_ACCESS_KEY",
+  "user": "chinmayee_nE5K6w",
+  "key": "X24YV7LByqQGQgz9vRMd",
 
   "capabilities": {
     "build": "browserstack-build-1",
@@ -11,7 +11,10 @@
 
   "environments": {
     "chrome": {
-      "browser": "chrome"
+      "browser": "Safari",
+      "browser_version": "14.0",
+      "os": "OS X",
+      "os_version": "Big Sur"
     }
   }
 }

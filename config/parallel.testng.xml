@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Parallel" thread-count="3" parallel="tests">
-    <test name="SingleTestEnv1">
+<suite name="Parallel" thread-count="5" parallel="tests">
+    <test name="ParallelTest_Chrome_98">
         <parameter name="config" value="parallel.conf.json"/>
         <parameter name="environment" value="env1"/>
         <classes>
-            <class name="com.browserstack.SingleTest"/>
+            <class name="com.browserstack.FlipkartTest"/>
         </classes>
     </test>
 
-    <test name="SingleTestEnv2">
+    <test name="ParallelTest_Firefox_latest">
         <parameter name="config" value="parallel.conf.json"/>
         <parameter name="environment" value="env2"/>
         <classes>
-            <class name="com.browserstack.SingleTest"/>
+            <class name="com.browserstack.FlipkartTest"/>
         </classes>
     </test>
 
-    <test name="SingleTestEnv3">
+    <test name="ParallelTest_Safari_latest">
         <parameter name="config" value="parallel.conf.json"/>
         <parameter name="environment" value="env3"/>
         <classes>
-            <class name="com.browserstack.SingleTest"/>
+            <class name="com.browserstack.FlipkartTest"/>
+        </classes>
+    </test>
+
+    <test name="ParallelTest_Edge_99.0">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="env4"/>
+        <classes>
+            <class name="com.browserstack.FlipkartTest"/>
+        </classes>
+    </test>
+
+    <test name="ParallelTest_Chrome_99.0">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="env5"/>
+        <classes>
+            <class name="com.browserstack.FlipkartTest"/>
         </classes>
     </test>
 </suite>
